@@ -3,11 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test name="bootcamp(failed)">
     <classes>
-      <class name="exercises.FirstSeleniumTest">
+      <class name="chapterSix.ValidateSupplierProductTest">
         <methods>
-          <include name="logInSuccesFull"/>
+          <include name="personalInfo"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- exercises.FirstSeleniumTest -->
+      </class> <!-- chapterSix.ValidateSupplierProductTest -->
     </classes>
   </test> <!-- bootcamp(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
