@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="9030" started-at="2017-12-27T13:23:29Z" finished-at="2017-12-27T13:23:38Z">
+  <suite name="Default Suite" duration-ms="6645" started-at="2017-12-29T08:34:14Z" finished-at="2017-12-29T08:34:21Z">
     <groups>
     </groups>
-    <test name="bootcamp" duration-ms="9030" started-at="2017-12-27T13:23:29Z" finished-at="2017-12-27T13:23:38Z">
-      <class name="exercises.FirstSeleniumTest">
-        <test-method status="PASS" signature="logInSuccesFull()[pri:0, instance:exercises.FirstSeleniumTest@5ba23b66]" name="logInSuccesFull" duration-ms="9008" started-at="2017-12-27T14:23:29Z" finished-at="2017-12-27T14:23:38Z">
+    <test name="bootcamp" duration-ms="6645" started-at="2017-12-29T08:34:14Z" finished-at="2017-12-29T08:34:21Z">
+      <class name="chapterSix.ValidateSupplierProductTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:chapterSix.ValidateSupplierProductTest@1b0375b3]" name="setUp" is-config="true" duration-ms="4334" started-at="2017-12-29T09:34:14Z" finished-at="2017-12-29T09:34:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logInSuccesFull -->
-      </class> <!-- exercises.FirstSeleniumTest -->
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="personalInfo()[pri:0, instance:chapterSix.ValidateSupplierProductTest@1b0375b3]" name="personalInfo" duration-ms="1518" started-at="2017-12-29T09:34:18Z" finished-at="2017-12-29T09:34:20Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[[Products does not contain Macbook] Expecting: <["iPod Nano",    "iPod shuffle",    "MacBook",    "iPod touch",    "iphone 4s",    "LG Nexus 5X",    "LG Nexus",    "LIBREM 10",    "iPod Nano",    "iPod shuffle",    "MacBook",    "iPod touch",    "iphone 4s",    "LG Nexus 5X",    "LG Nexus",    "LIBREM 10"]>to contain: <["Macbook"]>but could not find: <["Macbook"]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: [Products does not contain Macbook] Expecting: <["iPod Nano",    "iPod shuffle",    "MacBook",    "iPod touch",    "iphone 4s",    "LG Nexus 5X",    "LG Nexus",    "LIBREM 10",    "iPod Nano",    "iPod shuffle",    "MacBook",    "iPod touch",    "iphone 4s",    "LG Nexus 5X",    "LG Nexus",    "LIBREM 10"]>to contain: <["Macbook"]>but could not find: <["Macbook"]>at chapterSix.ValidateSupplierProductTest.personalInfo(ValidateSupplierProductTest.java:42)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalInfo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:chapterSix.ValidateSupplierProductTest@1b0375b3]" name="tearDown" is-config="true" duration-ms="755" started-at="2017-12-29T09:34:20Z" finished-at="2017-12-29T09:34:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- chapterSix.ValidateSupplierProductTest -->
     </test> <!-- bootcamp -->
   </suite> <!-- Default Suite -->
 </testng-results>
