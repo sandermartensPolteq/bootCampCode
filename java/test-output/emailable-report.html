@@ -9,34 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default Suite</th></tr>
-<tr><td><a href="#t0">bootcamp</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">6.645</td><td></td><td></td></tr>
+<tr><td><a href="#t0">bootcamp</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1.531</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">bootcamp &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">chapterSix.ValidateSupplierProductTest</td><td><a href="#m0">personalInfo</a></td><td rowspan="1">1514536458798</td><td rowspan="1">1518</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">bootcamp &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">chapterSix.TestShopScenario</td><td><a href="#m0">tearDown</a></td><td rowspan="1">1515063353868</td><td rowspan="1">0</td></tr><tr><th colspan="4">bootcamp &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">chapterSix.TestShopScenario</td><td><a href="#m1">setUp</a></td><td rowspan="1">1515063352384</td><td rowspan="1">1484</td></tr></tbody>
 </table>
-<h2>bootcamp</h2><h3 id="m0">chapterSix.ValidateSupplierProductTest#personalInfo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: [Products does not contain Macbook] 
-Expecting:
- &lt;[&quot;iPod Nano&quot;,
-    &quot;iPod shuffle&quot;,
-    &quot;MacBook&quot;,
-    &quot;iPod touch&quot;,
-    &quot;iphone 4s&quot;,
-    &quot;LG Nexus 5X&quot;,
-    &quot;LG Nexus&quot;,
-    &quot;LIBREM 10&quot;,
-    &quot;iPod Nano&quot;,
-    &quot;iPod shuffle&quot;,
-    &quot;MacBook&quot;,
-    &quot;iPod touch&quot;,
-    &quot;iphone 4s&quot;,
-    &quot;LG Nexus 5X&quot;,
-    &quot;LG Nexus&quot;,
-    &quot;LIBREM 10&quot;]&gt;
-to contain:
- &lt;[&quot;Macbook&quot;]&gt;
-but could not find:
- &lt;[&quot;Macbook&quot;]&gt;
-
-	at chapterSix.ValidateSupplierProductTest.personalInfo(ValidateSupplierProductTest.java:42)
+<h2>bootcamp</h2><h3 id="m0">chapterSix.TestShopScenario#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at chapterSix.TestShopScenario.tearDown(TestShopScenario.java:24)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">chapterSix.TestShopScenario#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;DESKTOP-DPEFIOB&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:116)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:155)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at browser.BrowserFactoryAdvanced.getFirefoxDriver(BrowserFactoryAdvanced.java:33)
+	at browser.BrowserFactoryAdvanced.getDriver(BrowserFactoryAdvanced.java:22)
+	at chapterSix.TestShopScenario.setUp(TestShopScenario.java:18)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
