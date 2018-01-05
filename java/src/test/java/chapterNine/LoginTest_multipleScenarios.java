@@ -5,12 +5,10 @@ import org.assertj.core.api.Assertions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
-import pages.HomePage;
 import pages.LoginPage;
-import pages.MyAccountPage;
 import pages.TopToolbar;
 
-public class LoginTest {
+public class LoginTest_multipleScenarios {
 
     @Test
     public void login(){
@@ -31,11 +29,22 @@ public class LoginTest {
         //Click sign in button
         toptoolbar.goToLoginPage();
 
-        //Fill in the form to log in
-        loginpage.login("bootcamper@feelthepain.com", "1qazxsw2");
+        // 1. empty email
+        loginpage.login("", "1qazxsw2");
+        Assertions.assertThat(loginpage.getAlertMessage()).as("User not logged in").contains("An email address required.");
 
-        //Validation on the user login name
-        Assertions.assertThat(toptoolbar.getUserName()).as("User not logged in").isEqualTo("Seargeant Slaughter");
+        // 2. empty password
+        loginpage.login("bootcamper@feelthepain.com", "");
+        Assertions.assertThat(loginpage.getAlertMessage()).as("User not logged in").contains("Password is required.");
+
+        // 3. invalid email
+        loginpage.login("bootcamper@fe", "1qazxsw2");
+        Assertions.assertThat(loginpage.getAlertMessage()).as("User not logged in").contains("Invalid email address.");
+
+        // 4. invalid password
+        loginpage.login("bootcamper@feelthepain.com", "fsfqdfqfsdfsqfsq");
+        Assertions.assertThat(loginpage.getAlertMessage()).as("User not logged in").contains("Authentication failed.");
+
 
         //Close browser
         driver.quit();

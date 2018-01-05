@@ -25,7 +25,7 @@ public class ContactFormTest {
         ContactPage contactPage = new ContactPage(driver);
 
         //Click on contact
-        toptoolbar.clickContactUs();
+        toptoolbar.goToContactPage();
 
         //Fill in the form
         contactPage.submitForm("Customer service", "bootcamper@feelthepain.com","4321234", "Ipod defect while lifting, need new one");

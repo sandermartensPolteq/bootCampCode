@@ -3,12 +3,12 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test name="bootcamp(failed)">
     <classes>
-      <class name="chapterSix.TestShopScenario">
+      <class name="chapterSixExtra.exerciseOne">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="changePersonalInfo"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- chapterSix.TestShopScenario -->
+      </class> <!-- chapterSixExtra.exerciseOne -->
     </classes>
   </test> <!-- bootcamp(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->
