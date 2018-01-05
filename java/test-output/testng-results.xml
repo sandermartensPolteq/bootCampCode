@@ -1,21 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="9709" started-at="2018-01-05T07:49:15Z" finished-at="2018-01-05T07:49:24Z">
+  <suite name="Suite" duration-ms="11142" started-at="2018-01-05T14:00:31Z" finished-at="2018-01-05T14:00:42Z">
     <groups>
     </groups>
-    <test name="bootcamp" duration-ms="9709" started-at="2018-01-05T07:49:15Z" finished-at="2018-01-05T07:49:24Z">
-      <class name="chapterSixExtra.exerciseOne">
-        <test-method status="PASS" signature="setup()[pri:0, instance:chapterSixExtra.exerciseOne@7dc36524]" name="setup" is-config="true" duration-ms="5277" started-at="2018-01-05T08:49:15Z" finished-at="2018-01-05T08:49:20Z">
+    <test name="ChromeTest" duration-ms="11142" started-at="2018-01-05T14:00:31Z" finished-at="2018-01-05T14:00:42Z">
+      <class name="browserDriven.BrowserDrivenTest">
+        <test-method status="PASS" signature="setUp(browser.BrowserFactoryAdvanced$Browser)[pri:0, instance:browserDriven.BrowserDrivenTest@3b6eb2ec]" name="setUp" is-config="true" duration-ms="4393" started-at="2018-01-05T15:00:31Z" finished-at="2018-01-05T15:00:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="changePersonalInfo()[pri:0, instance:chapterSixExtra.exerciseOne@7dc36524]" name="changePersonalInfo" duration-ms="4400" started-at="2018-01-05T08:49:20Z" finished-at="2018-01-05T08:49:24Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="correctLogin(java.lang.String, java.lang.String)[pri:0, instance:browserDriven.BrowserDrivenTest@3b6eb2ec]" name="correctLogin" duration-ms="1800" started-at="2018-01-05T15:00:35Z" finished-at="2018-01-05T15:00:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sander.martens+webshop1@polteq.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test1234!]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- changePersonalInfo -->
-      </class> <!-- chapterSixExtra.exerciseOne -->
-    </test> <!-- bootcamp -->
-  </suite> <!-- Default Suite -->
+        </test-method> <!-- correctLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:browserDriven.BrowserDrivenTest@3b6eb2ec]" name="tearDown" is-config="true" duration-ms="771" started-at="2018-01-05T15:00:37Z" finished-at="2018-01-05T15:00:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(browser.BrowserFactoryAdvanced$Browser)[pri:0, instance:browserDriven.BrowserDrivenTest@3b6eb2ec]" name="setUp" is-config="true" duration-ms="3401" started-at="2018-01-05T15:00:38Z" finished-at="2018-01-05T15:00:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="readCSV()[pri:0, instance:browserDriven.BrowserDrivenTest@3b6eb2ec]" name="readCSV" duration-ms="2" started-at="2018-01-05T15:00:41Z" finished-at="2018-01-05T15:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readCSV -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:browserDriven.BrowserDrivenTest@3b6eb2ec]" name="tearDown" is-config="true" duration-ms="740" started-at="2018-01-05T15:00:41Z" finished-at="2018-01-05T15:00:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- browserDriven.BrowserDrivenTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
 </testng-results>

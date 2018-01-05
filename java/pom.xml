@@ -54,7 +54,12 @@
             <version>1.7.25</version>
             <scope>test</scope>
         </dependency>
-
+        <!-- Use for api testing -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>3.0.6</version>
+        </dependency>
     </dependencies>
 
 </project>

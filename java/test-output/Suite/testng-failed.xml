@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="ChromeTest(failed)">
+    <parameter name="password" value="Test1234!"/>
+    <parameter name="browser" value="CHROME"/>
+    <parameter name="email" value="sander.martens+webshop1@polteq.com"/>
+    <classes>
+      <class name="browserDriven.BrowserDrivenTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="correctLogin" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- browserDriven.BrowserDrivenTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
